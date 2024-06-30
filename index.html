@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Page 1</h1>
+    <a href="page2.html">Page 2</a>
+    <form>
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" maxlength="30" pattern="[a-zA-Z ]+"><labe>(max 30 chracters a-z and A-Z)</labe><br><br>
+        
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" maxlength="30" pattern="[a-zA-Z ]+"><labe>(max 30 chracters a-z and A-Z)</labe><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <select id="day" name="day">
+            <option value="">Day</option>
+            <!-- Options for days 1-31 -->
+        </select>
+        <select id="month" name="month">
+            <option value="">Month</option>
+            <!-- Options for months 1-12 -->
+        </select>
+        <select id="year" name="year">
+            <option value="">Year</option>
+            <!-- Options for years -->
+        </select><br><br>
+
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" maxlength="10" pattern="[0-9]{10}"><labe>(10 digit number)</labe><br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address"></textarea><br><br>
+
+        <label for="city">City:</label> 
+        <input type="text" id="city" name="city" maxlength="30" pattern="[a-zA-Z ]+"><labe>(max 30 chracters a-z and A-Z)</labe><br><br>
+
+        <label for="pin">PIN Code:</label>
+        <input type="text" id="pin" name="pin" maxlength="6" pattern="[0-9]{6}"><labe>(6 digit number)</labe><br><br>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" maxlength="30" pattern="[a-zA-Z ]+"><labe>(max 30 chracters a-z and A-Z)</labe><br><br>
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" value="India" readonly><br><br>
+
+        <label for="hobbies">Hobbies:</label><br>
+        <label for="drawing">Drawing</label>
+        <input type="checkbox" id="singing" name="hobbies" value="singing">
+        <label for="singing">Singing</label>
+        <input type="checkbox" id="dancing" name="hobbies" value="dancing">
+        <label for="dancing">Dancing</label>
+        <input type="checkbox" id="sketching" name="hobbies" value="sketching">
+        <label for="sketching">Sketching</label>
+        <input type="checkbox" id="others" name="hobbies" value="others"><br>
+        <label for="others">Others</label><input type="text" id="others" name="others"><br><br>
+
+
+        <label for="qualification">Qualification:</label><br>
+        <table border="1">
+            <tr>
+                <th>Sl.No.</th>
+                <th>Examination</th>
+                <th>Board</th>
+                <th>Percentage</th>
+                <th>Year of Passing</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Class X</td>
+                <td><input type="text" name="board1" maxlength="10"></td>
+                <td><input type="text" name="percentage1" maxlength="5" pattern="\d+(\.\d{1,2})?"></td>
+                <td><input type="text" name="year1" maxlength="4"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Class XII</td>
+                <td><input type="text" name="board2" maxlength="10"></td>
+                <td><input type="text" name="percentage2" maxlength="5" pattern="\d+(\.\d{1,2})?"></td>
+                <td><input type="text" name="year2" maxlength="4"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Graduation</td>
+                <td><input type="text" name="board3" maxlength="10"></td>
+                <td><input type="text" name="percentage3" maxlength="5" pattern="\d+(\.\d{1,2})?"></td>
+                <td><input type="text" name="year3" maxlength="4"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Masters</td>
+                <td><input type="text" name="board4" maxlength="10"></td>
+                <td><input type="text" name="percentage4" maxlength="5" pattern="\d+(\.\d{1,2})?"></td>
+                <td><input type="text" name="year4" maxlength="4"></td>
+            </tr>
+        </table><br>
+
+        <label for="courses">Courses<br> Applied For:</label>
+        <input type="checkbox" id="bca" name="courses" value="bca">
+        <label for="bca">BCA</label>
+        <input type="checkbox" id="bcom" name="courses" value="bcom">
+        <label for="bcom">B.Com</label>
+        <input type="checkbox" id="bsc" name="courses" value="bsc">
+        <label for="bsc">B.Sc</label>
+        <input type="checkbox" id="ba" name="courses" value="ba">
+        <label for="ba">B.A</label><br><br>
+
+        <center><input type="submit" value="Submit">
+        <input type="reset" value="Reset"></center>
+    </form>
+
+</body>
+</html>
